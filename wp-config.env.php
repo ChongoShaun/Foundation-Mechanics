@@ -16,7 +16,7 @@
 
 // Set environment based on hostname
 switch ($hostname) {
-    case 'dev.SITE.com:8888':
+    case 'dev.foundationmechanics.com:8888':
         define('WP_ENV', 'development');
         break;
     
@@ -24,7 +24,7 @@ switch ($hostname) {
         define('WP_ENV', 'staging');
         break;
 
-    case 'www.domain.com':
+    case 'www.foundationmechanics.com':
     default: 
         define('WP_ENV', 'production');
 }
