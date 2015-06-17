@@ -16,7 +16,7 @@
 	<!-- CSS
   ================================================== -->
   	<link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>" />
-	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/stylesheets/rush.css">
+	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/css/foundationmech.css">
 
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>

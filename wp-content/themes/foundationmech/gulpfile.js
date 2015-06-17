@@ -39,7 +39,7 @@ gulp.task('scripts', function() {
 // Watch Files For Changes
 gulp.task('watch', function() {
    browserSync.init({
-        proxy: "dev.vidarlaw.com:8888",
+        proxy: "dev.foundationmechanics.com:8888",
         host: "localhost",
         port: 8888
     });
@@ -49,42 +49,5 @@ gulp.task('watch', function() {
 
 });
 
-
-
-
-
 // Default Task
 gulp.task('default', ['lint', 'sass', 'scripts', 'watch']);
-
-
-
-/*
-	
-	var gulp        = require('gulp');
-var browserSync = require('browser-sync').create();
-var sass        = require('gulp-sass');
-var reload      = browserSync.reload;
-
-// Static Server + watching scss/html files
-gulp.task('serve', ['sass'], function() {
-
-   browserSync.init({
-        proxy: "local.vidarlaw.com.10.1.10.13.xip.io:8888"
-    });
-
-    gulp.watch("assets/scss/*.scss", ['sass']);
-    gulp.watch("assets/*.html").on('change', reload);
-});
-
-// Compile sass into CSS & auto-inject into browsers
-gulp.task('sass', function() {
-    return gulp.src("assets/scss/*.scss")
-        .pipe(sass())
-        .pipe(gulp.dest("assets/css"))
-        .pipe(reload({stream: true}));
-});
-
-gulp.task('default', ['serve']);
-
-*/
-
