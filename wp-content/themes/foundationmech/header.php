@@ -40,14 +40,20 @@
 
 	<!-- Header / Nav / Global Etc
 	================================================== -->
-	<div class="container">
-		<div class="sixteen columns">
-			<div id="logo">
-				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php bloginfo( 'name' ) ?>" rel="home"><?php bloginfo( 'name' ) ?></a>
+	<div id="header" class="big-container full-width">
+		<nav>
+			<div class="container">
+				<div class="twelve columns">
+					<div class="logo">
+						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php bloginfo( 'name' ) ?>" rel="home"><img src="<?php bloginfo( 'template_directory' ) ?>/assets/images/logo_foundationmech.png" alt="Foundation Mechanics" class="scale-with-grid" /></a>
+					</div>
+					<div class="nav">
+						<?php 
+							wp_nav_menu( array( 'theme_location' => 'main-menu' ) );
+						?>
+					</div>
+				</div>
 			</div>
-		</div>
-		<div class="sixteen columns">
-			<?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
-		</div>
+		</nav>
 	</div>
 	<!-- End Header -->

@@ -348,14 +348,14 @@ table {
 
 body {
   background: #fff;
-  font: 14px/21px Arial, sans-serif;
+  font: 14px/21px "Trebuchet MS", sans-serif;
   color: #444;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%; }
 
 hr {
-  border: solid #ddd;
-  border-width: 1px 0 0;
+  border: solid #e7763d;
+  border-width: 2px 0 0;
   clear: both;
   margin: 10px 0 30px;
   height: 0; }
@@ -789,7 +789,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 
 h1 {
   color: #181818;
-  font-family: Arial, sans-serif;
+  font-family: "Trebuchet MS", sans-serif;
   font-weight: normal;
   font-size: 46px;
   line-height: 69px;
@@ -797,7 +797,7 @@ h1 {
 
 h2 {
   color: #181818;
-  font-family: Arial, sans-serif;
+  font-family: "Trebuchet MS", sans-serif;
   font-weight: normal;
   font-size: 35px;
   line-height: 52.5px;
@@ -805,7 +805,7 @@ h2 {
 
 h3 {
   color: #181818;
-  font-family: Arial, sans-serif;
+  font-family: "Trebuchet MS", sans-serif;
   font-weight: normal;
   font-size: 28px;
   line-height: 42px;
@@ -813,7 +813,7 @@ h3 {
 
 h4 {
   color: #181818;
-  font-family: Arial, sans-serif;
+  font-family: "Trebuchet MS", sans-serif;
   font-weight: normal;
   font-size: 21px;
   line-height: 31.5px;
@@ -821,14 +821,14 @@ h4 {
 
 h5 {
   color: #181818;
-  font-family: Arial, sans-serif;
+  font-family: "Trebuchet MS", sans-serif;
   font-weight: normal;
   font-size: 17px;
   line-height: 25.5px; }
 
 h6 {
   color: #181818;
-  font-family: Arial, sans-serif;
+  font-family: "Trebuchet MS", sans-serif;
   font-weight: normal;
   font-size: 14px;
   line-height: 21px; }
@@ -882,7 +882,7 @@ blockquote cite a, blockquote cite a:visited, blockquote cite a:visited {
 
 a, a:visited {
   color: #333;
-  text-decoration: underline; }
+  text-decoration: none; }
 
 a:hover, a:focus {
   color: #000;
@@ -957,7 +957,7 @@ input[type="button"] {
   margin: 0 0 20px 0;
   line-height: normal;
   padding: 8px 10px;
-  font-family: Arial, sans-serif; }
+  font-family: "Trebuchet MS", sans-serif; }
 
 .button:hover,
 button:hover,
@@ -1044,7 +1044,7 @@ select {
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
-  font: 13px Arial, sans-serif;
+  font: 13px "Trebuchet MS", sans-serif;
   color: #777;
   width: 210px;
   max-width: 100%;
@@ -1333,3 +1333,82 @@ table {
 .table-hover tbody tr:hover > td,
 .table-hover tbody tr:hover > th {
   background-color: #999; }
+
+#header {
+  position: fixed;
+  width: 100%;
+  background-color: #fff;
+  -moz-box-shadow: 0px 3px 10px rgba(50, 50, 50, 0.75);
+  -webkit-box-shadow: 0px 3px 10px rgba(50, 50, 50, 0.75);
+  box-shadow: 0px 3px 10px rgba(50, 50, 50, 0.75);
+  z-index: 9999; }
+  #header .logo {
+    float: left;
+    padding: 13px 0; }
+  #header .nav {
+    position: absolute;
+    bottom: 13px;
+    right: 0;
+    font-family: "Trebuchet MS", sans-serif; }
+    #header .nav ul {
+      margin: 0;
+      padding: 0; }
+    #header .nav li {
+      padding: 0 15px;
+      display: inline; }
+      #header .nav li.current-menu-item a {
+        color: #000; }
+      #header .nav li:last-child {
+        padding-right: 0; }
+    #header .nav a {
+      color: #959ba7;
+      text-transform: uppercase;
+      letter-spacing: .2em; }
+      #header .nav a:hover {
+        color: #666; }
+
+.hero-container {
+  min-height: 600px;
+  padding-top: 150px;
+  position: relative;
+  -moz-box-shadow: 0px 3px 10px rgba(50, 50, 50, 0.75);
+  -webkit-box-shadow: 0px 3px 10px rgba(50, 50, 50, 0.75);
+  box-shadow: 0px 3px 10px rgba(50, 50, 50, 0.75); }
+
+.hero-text-container {
+  width: 100%;
+  background-color: rgba(231, 118, 61, 0.55);
+  margin-top: 500px;
+  padding: 50px 0;
+  position: absolute;
+  bottom: 0;
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 36px;
+  line-height: 40px;
+  font-style: italic;
+  color: #fff; }
+
+.services-container, .projects-container, .about-container, .contact-container {
+  padding: 145px 0 60px;
+  background-color: #393f49;
+  color: #fff; }
+  .services-container h2, .projects-container h2, .about-container h2, .contact-container h2 {
+    display: inline-block;
+    font-size: 16px;
+    line-height: normal;
+    letter-spacing: .2em;
+    border-bottom: 2px solid #e7763d;
+    color: #fff; }
+  .services-container .full-width:first-child p, .projects-container .full-width:first-child p, .about-container .full-width:first-child p, .contact-container .full-width:first-child p {
+    font-size: 30px;
+    font-family: "Trebuchet MS", sans-serif;
+    line-height: 36px !important; }
+
+.projects-container {
+  background-color: #876b5d; }
+
+.about-container {
+  background-color: #555e6e; }
+
+.contact-container {
+  background-color: #654b3d; }
