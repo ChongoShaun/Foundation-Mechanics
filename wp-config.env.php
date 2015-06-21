@@ -20,7 +20,7 @@ switch ($hostname) {
         define('WP_ENV', 'development');
         break;
     
-    case 'clients.barkdesignchicago.com':
+    case 's207723.gridserver.com':
         define('WP_ENV', 'staging');
         break;
 

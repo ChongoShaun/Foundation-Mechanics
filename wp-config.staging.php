@@ -13,16 +13,16 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', '');
+define('DB_NAME', 'db207723_fudge_foundation');
 
 /** MySQL database username */
-define('DB_USER', '');
+define('DB_USER', 'db207723');
 
 /** MySQL database password */
-define('DB_PASSWORD', '');
+define('DB_PASSWORD', 'F0undMech!');
 
 /** MySQL hostname */
-define('DB_HOST', '');
+define('DB_HOST', 'external-db.s207723.gridserver.com');
 
 /**
  * For developers: WordPress debugging mode.
