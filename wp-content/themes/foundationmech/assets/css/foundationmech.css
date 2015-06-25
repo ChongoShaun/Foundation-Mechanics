@@ -1366,6 +1366,8 @@ hr {
       letter-spacing: .2em; }
       #header .nav a:hover {
         color: #666; }
+      #header .nav a.active {
+        color: #000; }
 
 .hero-container {
   min-height: 600px;
@@ -1427,8 +1429,7 @@ hr {
 
 .projects-container {
   min-height: 600px;
-  margin: 0 auto;
-  padding: 80px 0;
+  padding: 145px 0 60px;
   background-image: url(../images/bg_shadow.png), url(../images/bg_projects.jpg);
   background-position: center top, center center;
   background-repeat: repeat-x, repeat; }
@@ -1441,9 +1442,15 @@ hr {
     padding-left: 50px; }
     .projects-container .project-filters li {
       display: inline;
-      padding-right: 20px;
+      margin-right: 5px;
       list-style-type: none;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      cursor: pointer; }
+      .projects-container .project-filters li span {
+        padding: 10px; }
+      .projects-container .project-filters li.active span {
+        padding: 10px;
+        background-color: #e7763d; }
 
 .about-container {
   background-image: url(../images/bg_shadow.png), url(../images/bg_about.jpg);
@@ -1454,6 +1461,67 @@ hr {
   background-image: url(../images/bg_shadow.png), url(../images/bg_contact.jpg);
   background-position: center top, center center;
   background-repeat: repeat-x, repeat; }
+  .contact-container form {
+    margin-top: 28px; }
+  .contact-container .wpcf7 input {
+    float: left;
+    margin-bottom: 5px;
+    background-color: rgba(231, 118, 61, 0.4);
+    border: 0;
+    color: #fff; }
+    .contact-container .wpcf7 input::-webkit-input-placeholder {
+      color: #fff; }
+    .contact-container .wpcf7 input:-moz-placeholder {
+      color: #fff; }
+    .contact-container .wpcf7 input::-moz-placeholder {
+      color: #fff; }
+    .contact-container .wpcf7 input:-ms-input-placeholder {
+      color: #fff; }
+  .contact-container .wpcf7 br {
+    display: none; }
+  .contact-container .wpcf7 .full {
+    width: 98%; }
+  .contact-container .wpcf7 .email input {
+    width: 55%;
+    margin-right: 5px; }
+  .contact-container .wpcf7 .tel-526 input {
+    width: 40%; }
+  .contact-container .wpcf7 textarea {
+    background-color: rgba(231, 118, 61, 0.4);
+    border: 0;
+    color: #fff; }
+    .contact-container .wpcf7 textarea::-webkit-input-placeholder {
+      color: #fff; }
+    .contact-container .wpcf7 textarea:-moz-placeholder {
+      color: #fff; }
+    .contact-container .wpcf7 textarea::-moz-placeholder {
+      color: #fff; }
+    .contact-container .wpcf7 textarea:-ms-input-placeholder {
+      color: #fff; }
+  .contact-container .wpcf7 .wpcf7-submit {
+    margin: 0;
+    padding: 0;
+    background: none;
+    color: #e7763d;
+    text-shadow: none;
+    font-size: 16px;
+    text-transform: uppercase; }
+  .contact-container .wpcf7 .wpcf7-validation-errors {
+    margin: 0;
+    padding: 10px;
+    border: 0;
+    background-color: rgba(249, 59, 59, 0.66); }
+  .contact-container .wpcf7 .wpcf7-mail-sent-ok {
+    margin: 0;
+    padding: 10px;
+    border: 0;
+    background-color: rgba(115, 252, 140, 0.66); }
+  .contact-container .wpcf7 .wpcf7-not-valid-tip {
+    display: none; }
+  .contact-container .wpcf7 .wpcf7-form-control-wrap {
+    position: inherit; }
+  .contact-container .wpcf7 .wpcf7-not-valid {
+    background-color: rgba(249, 59, 59, 0.66); }
 
 #projects {
   margin-top: 30px;
@@ -1494,7 +1562,8 @@ hr {
 
 .staff-container, .single-projects-container {
   padding: 300px 0 60px;
-  background-image: url(../images/bg_about.jpg); }
+  background-image: url(../images/bg_about.jpg);
+  background-repeat: repeat; }
   .staff-container h1, .single-projects-container h1 {
     font-size: 24px;
     line-height: 26px;
@@ -1514,4 +1583,101 @@ hr {
   color: #fff;
   background-image: url(../images/bg_shadow.png);
   background-position: center top;
-  background-repeat: repeat-x; }
+  background-repeat: repeat-x;
+  font-size: 12px;
+  font-family: "Trebuchet MS", sans-serif;
+  text-transform: uppercase; }
+  .footer ul {
+    margin: 0;
+    padding: 15px 0 0; }
+  .footer li {
+    display: inline;
+    padding-right: 20px; }
+  .footer a {
+    color: #fff; }
+
+@media only screen and (max-width: 959px) {
+  #header .logo {
+    padding: 13px 40px; }
+  #header .nav {
+    position: relative;
+    margin-top: 10px;
+    bottom: inherit;
+    right: inherit;
+    text-align: center; }
+    #header .nav ul {
+      margin: 12px 0; }
+    #header .nav li {
+      margin: 12px 0;
+      padding: 50px 5px; }
+  .contact-container .wpcf7 .email input, .contact-container .wpcf7 .tel-526 input {
+    width: 98%; }
+  #projects .project-overlay a {
+    font-size: 18px; }
+  .projects-container .project-filters {
+    margin-top: 0; } }
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  #header .logo {
+    padding: 13px 0;
+    width: 50%; }
+  #header .nav {
+    position: absolute;
+    margin-top: 10px;
+    bottom: 0;
+    right: 0;
+    text-align: center; }
+  #projects .mix {
+    width: 100%; }
+  .projects-container .project-filters {
+    margin-top: 0; } }
+
+@media only screen and (max-width: 767px) {
+  #header .logo {
+    padding: 13px 0;
+    width: 40%; }
+  #header .nav {
+    position: absolute;
+    margin-top: 10px;
+    bottom: 0;
+    right: 0;
+    text-align: center; }
+    #header .nav li {
+      font-size: 12px; }
+  #projects .mix {
+    width: 100%; }
+  .projects-container .project-filters {
+    margin-top: 0;
+    width: 410px; } }
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  #header .nav {
+    margin-top: 10px;
+    bottom: 0;
+    right: 0;
+    text-align: center; }
+    #header .nav ul {
+      margin: 12px 0; }
+    #header .nav li {
+      margin: 12px 0;
+      padding: 12px 5px; } }
+
+@media only screen and (max-width: 479px) {
+  #header .logo {
+    padding: 13px 0px;
+    width: 100%; }
+  #header .nav {
+    position: relative;
+    margin-top: 10px;
+    bottom: inherit;
+    right: inherit;
+    text-align: center; }
+    #header .nav ul {
+      margin: 12px 0; }
+    #header .nav li {
+      margin: 12px 0;
+      padding: 12px 5px; }
+  .projects-container .project-filters {
+    float: none;
+    margin-top: 45px;
+    padding: 0; } }

@@ -6,9 +6,9 @@
 				$terms = get_terms( 'project-categories' );
 				if ( ! empty( $terms ) && ! is_wp_error( $terms ) ){
 				 echo '<ul>';
-				 echo '<li class="filter" data-filter="all">ALL</li>';
+				 echo '<li class="filter" data-filter="all"><span>ALL</span></li>';
 				 foreach ( $terms as $term ) {
-				   echo '<li class="filter" data-filter=".'.strtolower($term->name).'">' . $term->name . '</li>';
+				   echo '<li class="filter" data-filter=".'.strtolower($term->name).'"><span>' . $term->name . '</span></li>';
 				    
 				 }
 				 echo '</ul>';

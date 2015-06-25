@@ -45,11 +45,24 @@
 			<div class="container">
 				<div class="twelve columns">
 					<div class="logo">
-						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php bloginfo( 'name' ) ?>" rel="home"><img src="<?php bloginfo( 'template_directory' ) ?>/assets/images/logo_foundationmech.png" alt="Foundation Mechanics" class="scale-with-grid" /></a>
+						<a href="#Home" title="<?php bloginfo( 'name' ) ?>" rel="home"><img src="<?php bloginfo( 'template_directory' ) ?>/assets/images/logo_foundationmech.png" alt="Foundation Mechanics" class="scale-with-grid" /></a>
 					</div>
 					<div class="nav">
 						<?php 
-							wp_nav_menu( array( 'theme_location' => 'main-menu' ) );
+							if(is_front_page()):
+								wp_nav_menu( array( 'theme_location' => 'main-menu' ) );
+							else:
+								?>
+									<div class="menu-main-menu-container">
+										<ul id="menu-main-menu" class="menu">
+											<li id="menu-item-25" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-25"><a href="<?php echo home_url(); ?>#Services">Services</a></li>
+											<li id="menu-item-26" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-26"><a href="<?php echo home_url(); ?>#Projects">Projects</a></li>
+											<li id="menu-item-27" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-27"><a href="<?php echo home_url(); ?>#About">About</a></li>
+											<li id="menu-item-28" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-28"><a href="<?php echo home_url(); ?>#Contact">Contact</a></li>
+										</ul>
+									</div>								
+								<?php
+							endif;
 						?>
 					</div>
 				</div>

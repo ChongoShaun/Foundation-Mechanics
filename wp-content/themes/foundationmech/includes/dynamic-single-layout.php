@@ -6,7 +6,7 @@ if( have_rows('hero_section') ):
 endif;
 if( have_rows('services') ):
 	?>
-	<section>
+	<section id="Services">
 		<div class="big-container services-container">
 			<?php
 		    while ( have_rows('services') ) : the_row();
@@ -22,7 +22,7 @@ if( have_rows('services') ):
 endif;
 if( have_rows('projects') ):
 	?>
-	<section>
+	<section id="Projects">
 		<div class="big-container projects-container">
 			<?php
 				include('projects.php');
@@ -33,7 +33,7 @@ if( have_rows('projects') ):
 endif;
 if( have_rows('about') ):
 	?>
-	<section>
+	<section id="About">
 		<div class="big-container about-container">
 			<?php
 		    while ( have_rows('about') ) : the_row();
@@ -49,7 +49,7 @@ if( have_rows('about') ):
 endif;
 if( have_rows('contact') ):
 	?>
-	<section>
+	<section id="Contact">
 		<div class="big-container contact-container">
 			<?php
 		    while ( have_rows('contact') ) : the_row();

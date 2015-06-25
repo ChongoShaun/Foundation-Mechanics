@@ -4,7 +4,11 @@
 		<footer>
 			<div class="container">
 				<div class="twelve columns">
-					&copy; 2015 Foundation Mechanics      773.654.1368     info@foundationmech.com
+					<ul>
+						<li>&copy; 2015 Foundation Mechanics</li>
+						<li>773.654.1368</li>
+						<li><a href="mailto:info@foundationmech.com">info@foundationmech.com</a></li>
+					</ul>
 				</div>
 			</div>
 		</footer>
@@ -19,11 +23,7 @@
 	<script type="text/javascript">
 		$(function(){
 			$('#projects').mixItUp();  
-			
 			$(".project-box").hover(function(){
-				
-
-			    
 			    $(this).find("a").stop(true, false).animate({ 
 				    bottom: "-20" 
 				    }, 500, "easeInOutQuad");
@@ -32,6 +32,22 @@
 				    bottom: "-230px" 
 				    }, 500, "easeInOutQuad");
 			});			
+
+			$('#header a[href*=#]:not([href=#])').click(function() {
+			    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+			      var target = $(this.hash);
+			      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+			      if (target.length) {
+				     $('#header a').removeClass("active");
+				     $(this).addClass("active");
+			        $('html,body').animate({
+			          scrollTop: target.offset().top-75
+			        }, 1000,"easeInOutQuad" );
+			        return false;
+			      }
+			    }
+			});
+
 		});	
 
 

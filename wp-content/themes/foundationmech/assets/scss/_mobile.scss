@@ -1,0 +1,151 @@
+// #Example Media Queries
+// ##Media Query - Smaller than standard 960 (devices and browsers)
+@media only screen and (max-width: 959px) {
+
+	#header .logo{
+		padding:13px 40px;
+	}
+
+	#header .nav{
+		position: relative;
+		margin-top:10px;
+		bottom:inherit;
+		right:inherit;
+		text-align: center;
+		ul{
+			margin:12px 0;
+		}
+		li{
+			
+			margin:12px 0;
+			padding:50px 5px;
+		}
+		
+	}
+	
+	.contact-container .wpcf7 .email input, .contact-container .wpcf7 .tel-526 input{
+		width:98%;
+	}
+
+	#projects .project-overlay a{
+		font-size:18px;
+	}
+	.projects-container .project-filters{
+		margin-top:0;
+	}
+
+}
+
+// ##Media Query - Tablet Portrait size to standard 960 (devices and browsers)
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+	
+	#header .logo{
+		padding:13px 0;
+		width:50%;
+	}
+
+	#header .nav{
+		position:absolute;
+		margin-top:10px;
+		bottom:0;
+		right:0;
+		text-align: center;
+		li{
+		}
+		
+	}
+
+	#projects .mix{
+		width:100%;
+	}
+
+	.projects-container .project-filters{
+		margin-top:0;
+	}
+
+
+}
+
+// ##Media Query - All Mobile Sizes (devices and browser)
+@media only screen and (max-width: 767px) {
+
+
+	#header .logo{
+		padding:13px 0;
+		width:40%;
+	}
+
+	#header .nav{
+		position:absolute;
+		margin-top:10px;
+		bottom:0;
+		right:0;
+		text-align: center;
+		li{
+			font-size:12px;
+		}
+		
+	}
+
+	#projects .mix{
+		width:100%;
+	}
+	.projects-container .project-filters{
+		margin-top:0;
+		width:410px;
+	}
+
+}
+
+// ##Media Query - Mobile Landscape Size to Tablet Portrait (devices and browsers)
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+	#header .nav{
+		margin-top:10px;
+		bottom:0;
+		right:0;
+		text-align: center;
+		ul{
+			margin:12px 0;
+		}
+		li{
+			margin:12px 0;
+			padding:12px 5px;
+		}
+		
+	}
+
+
+}
+
+// ##Media Query - Mobile Portrait Size to Mobile Landscape Size (devices and browsers)
+@media only screen and (max-width: 479px) {
+
+	#header .logo{
+		padding:13px 0px;
+		width:100%;
+	}
+
+	#header .nav{
+		position: relative;
+		margin-top:10px;
+		bottom:inherit;
+		right:inherit;
+		text-align: center;
+		ul{
+			margin:12px 0;
+		}
+		li{
+			margin:12px 0;
+			padding:12px 5px;
+		}
+		
+	}
+
+	.projects-container .project-filters{
+		float:none;
+		margin-top:45px;
+		padding:0;
+	}
+}

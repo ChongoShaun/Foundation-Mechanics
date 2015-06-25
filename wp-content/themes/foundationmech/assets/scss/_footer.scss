@@ -4,5 +4,19 @@
 	background-image:url(../images/bg_shadow.png);
 	background-position: center top;
 	background-repeat: repeat-x;
-
+	font-size:12px;
+	font-family: $body_font_family;
+	text-transform: uppercase;
+	ul{
+		margin:0;
+		padding:15px 0 0;
+		
+	}
+	li{
+		display:inline;
+		padding-right:20px;
+	}
+	a{
+		color:#fff;
+	}
 }

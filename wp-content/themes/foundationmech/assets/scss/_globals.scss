@@ -55,6 +55,9 @@ hr {
 			&:hover{
 				color: #666;
 			}
+			&.active{
+				color:#000;
+			}
 		}
 	}
 }
@@ -132,8 +135,7 @@ hr {
  .projects-container{
 	@extend .services-container;	 
 	min-height:600px;
-	margin:0 auto;
-	padding:80px 0;
+	padding:145px 0 60px;
 	background-image:url(../images/bg_shadow.png), url(../images/bg_projects.jpg);
 	background-position: center top, center center;
 	background-repeat: repeat-x, repeat;
@@ -148,9 +150,20 @@ hr {
 		padding-left:50px;
 		li{
 			display:inline;
-			padding-right:20px;
+			margin-right:5px;
 			list-style-type:none;
 			text-transform: uppercase;
+			cursor: pointer;
+			span{
+				padding:10px;
+			}
+			&.active{
+				span{
+					padding:10px;
+					background-color:rgba(231, 118, 61, 1);
+					
+				}
+			}
 		}
 	}
  }
@@ -166,7 +179,76 @@ hr {
 	background-image:url(../images/bg_shadow.png), url(../images/bg_contact.jpg);
 	background-position: center top, center center;
 	background-repeat: repeat-x, repeat;
-
+	form{
+		margin-top:28px;
+	}
+	.wpcf7{
+		input{
+			float:left;
+			margin-bottom:5px;
+			background-color:rgba(231, 118, 61, .4);
+			border:0;
+			color:#fff;
+			@include placeholder {
+			    color: #fff;
+			}
+		}
+		br{
+			display:none;
+		}
+		.full{
+			width:98%;
+		}
+		.email{
+			input{
+				width:55%;
+				margin-right:5px;
+			}
+		}
+		.tel-526{
+			input{
+				width:40%;
+			}
+		}
+		textarea{
+			background-color:rgba(231, 118, 61, .4);
+			border:0;
+			color:#fff;
+			@include placeholder {
+			    color: #fff;
+			}
+		}
+		.wpcf7-submit{
+			margin:0;
+			padding:0;
+			background:none;
+			color:rgba(231, 118, 61, 1);
+			text-shadow:none;
+			font-size:16px;
+			text-transform: uppercase;
+		}		
+		.wpcf7-validation-errors{
+			margin:0;
+			padding:10px;
+			border:0;
+			background-color: rgba(249, 59, 59, 0.66);
+		}
+		.wpcf7-mail-sent-ok{
+			margin:0;
+			padding:10px;
+			border:0;
+			background-color: rgba(115, 252, 140, 0.66)			
+		}
+		.wpcf7-not-valid-tip{
+			display:none;
+		}
+		.wpcf7-form-control-wrap{
+			position:inherit;	
+		}
+		.wpcf7-not-valid{
+			background-color:rgba(249, 59, 59, 0.66);
+		}		
+	}
 }
 
 // Projects
@@ -226,6 +308,7 @@ hr {
 	@extend .services-container;
 	padding:300px 0 60px;
 	background-image:url(../images/bg_about.jpg);
+	background-repeat:repeat;
 	h1{
 		font-size:24px;
 		line-height:26px;
