@@ -1442,7 +1442,8 @@ hr {
     .projects-container .project-filters li {
       display: inline;
       padding-right: 20px;
-      list-style-type: none; }
+      list-style-type: none;
+      text-transform: uppercase; }
 
 .about-container {
   background-image: url(../images/bg_shadow.png), url(../images/bg_about.jpg);
