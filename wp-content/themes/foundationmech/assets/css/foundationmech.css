@@ -1522,6 +1522,9 @@ hr {
     position: inherit; }
   .contact-container .wpcf7 .wpcf7-not-valid {
     background-color: rgba(249, 59, 59, 0.66); }
+  .contact-container .wpcf7 .wpcf7-form-control-wrap.message {
+    float: left;
+    width: 100%; }
 
 #projects {
   margin-top: 30px;
@@ -1579,7 +1582,7 @@ hr {
   background-repeat: repeat; }
 
 .footer {
-  padding: 20px 0 80px;
+  padding: 20px 0 275px;
   color: #fff;
   background-image: url(../images/bg_shadow.png);
   background-position: center top;

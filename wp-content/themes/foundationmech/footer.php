@@ -6,7 +6,7 @@
 				<div class="twelve columns">
 					<ul>
 						<li>&copy; 2015 Foundation Mechanics</li>
-						<li>773.654.1368</li>
+						<li>V: 773.234.3087 | F: 815.301.3738</li>
 						<li><a href="mailto:info@foundationmech.com">info@foundationmech.com</a></li>
 					</ul>
 				</div>

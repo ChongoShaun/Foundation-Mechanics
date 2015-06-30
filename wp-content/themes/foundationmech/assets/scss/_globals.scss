@@ -248,6 +248,12 @@ hr {
 		.wpcf7-not-valid{
 			background-color:rgba(249, 59, 59, 0.66);
 		}		
+		.wpcf7-form-control-wrap {
+			&.message{
+				float:left;
+				width:100%;
+			}
+		}
 	}
 }
 

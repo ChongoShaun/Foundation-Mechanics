@@ -8,7 +8,8 @@
 	<meta charset="utf-8">
 	<title><?php wp_title(' | ', true, 'right'); ?></title>
 	<meta http-equiv="content-type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
-
+	<meta name="google-site-verification" content="bdZzn0NM6cLWDR1oFCXaV2pz14tavvgVAvDl-r02KVM" />
+	
 	<!-- Mobile
   ================================================== -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
